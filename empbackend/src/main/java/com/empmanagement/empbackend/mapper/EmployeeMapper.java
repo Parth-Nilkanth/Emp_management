@@ -5,7 +5,7 @@ import com.empmanagement.empbackend.entity.Employee;
 
 public class EmployeeMapper {
 
-    public static EmployeeDto mapToEmplyeeDto(Employee emp){
+    public static EmployeeDto mapToEmployeeDto(Employee emp){
         return new EmployeeDto(
                 emp.getId(),
                 emp.getFirstName(),

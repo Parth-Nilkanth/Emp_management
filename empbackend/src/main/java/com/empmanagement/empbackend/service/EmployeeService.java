@@ -1,7 +1,12 @@
 package com.empmanagement.empbackend.service;
 
-import com.empmanagement.empbackend.dto.EmployeeDto;
+import java.util.List;
 
+import com.empmanagement.empbackend.dto.EmployeeDto;
 public interface EmployeeService {
     EmployeeDto createEmployee(EmployeeDto employeeDto);
+
+    EmployeeDto getEmployeeById(Long employeeId);
+
+    List<EmployeeDto> getAllEmployees();
 }
