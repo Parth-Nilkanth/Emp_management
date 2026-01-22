@@ -38,6 +38,7 @@ import lombok.AllArgsConstructor;
         }
 
         //rest api to get all the employees
+        @GetMapping()
         public ResponseEntity<List<EmployeeDto>> getAllEmployees(){
             List<EmployeeDto> employees =  employeeService.getAllEmployees();
             return ResponseEntity.ok(employees);

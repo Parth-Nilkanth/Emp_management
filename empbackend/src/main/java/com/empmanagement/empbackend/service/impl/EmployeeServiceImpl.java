@@ -1,7 +1,7 @@
 package com.empmanagement.empbackend.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -38,7 +38,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<EmployeeDto> getAllEmployees()
     {
         List<Employee> employees = employeeRepository.findAll();
-        return employees.stream().map( (employee) -> EmployeeMapper.maptoEmployeeDto(employee)).collect(Collectors.toList());
+        List<EmployeeDto> empList = new ArrayList<>();
+        for(Employee e : employees)
+        {
+            empList.add(EmployeeMapper.mapToEmployeeDto(e));
+        }
+        return empList;
     }
 
 }
