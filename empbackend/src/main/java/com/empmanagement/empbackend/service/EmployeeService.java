@@ -1,7 +1,5 @@
 package com.empmanagement.empbackend.service;
-
 import java.util.List;
-
 import com.empmanagement.empbackend.dto.EmployeeDto;
 public interface EmployeeService {
     EmployeeDto createEmployee(EmployeeDto employeeDto);
@@ -12,4 +10,7 @@ public interface EmployeeService {
 
     // method to update Employee
     EmployeeDto updateEmployee(Long employeeId , EmployeeDto updatedEmployee);
+
+    // method to delete employee
+    void deleteEmployee(Long employeeId);
 }
