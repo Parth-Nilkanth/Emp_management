@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 function Hello(){
     return(
         <h1 className="text-center">Hello World</h1>
