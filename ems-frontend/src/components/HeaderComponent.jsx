@@ -5,7 +5,7 @@ const HeaderComponent = () => {
     <div>
         <header>
             <nav className="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://www.facebook.com" >Employee</a>
+            <a className="navbar-brand" href="https://www.facebook.com" >Employee</a>
             </nav>
         </header>
     </div>
