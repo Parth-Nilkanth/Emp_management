@@ -3,7 +3,6 @@ import ListEmployeeComponent from './components/ListEmployeeComponent'
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Hello from './Hello'
 import EmployeeComponent from './components/EmployeeComponent'
 // use BrowserRouter to add routes from specific request
 
@@ -21,6 +20,8 @@ function App() {
         {/* route for adding employee */}
         <Route path='/add-employee' element={<EmployeeComponent/>}></Route>
         
+        {/* route for update eployee */}
+        <Route path='/edit-employee/:id' element={<EmployeeComponent/>}></Route>
       </Routes>
       
       <FooterComponent/>
